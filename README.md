@@ -38,7 +38,10 @@ To start firefox:
 $ vagrant ssh firefox-box -- sudo salt-call state.sls firefox
 ```
 
-To view Firefox using web-browser, use http://firefox-box:5800. To view Firefox using VNC, execute command `$ vncviewer firefox-box:5900`.
+If you set `firefox.lookup.ip: 0.0.0.0` in `salt/roots/pillar/firefox.sls`, you can use VNC via web-browser http://firefox-box:5800 and `firefox-box:5900` with VNC client. Otherwise, you need to SSH tunnel those ports to your `localhost` for example below. Then, use http://localhost:15800 and `localhost:15900`:
+```
+$ ssh -L 15900:127.0.0.1:15900 -L 15800:127.0.0.1:5800 -p 22 vagrant@firefox-box
+```
 
 To stop Firefox:
 ```
