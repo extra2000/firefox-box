@@ -1,5 +1,17 @@
 # Changelog
 
+### [1.0.1](https://github.com/extra2000/firefox-box/compare/v1.0.0...v1.0.1) (2021-01-13)
+
+
+### Documentations
+
+* **README:** Update instructions for viewing VNC ([6ce7c35](https://github.com/extra2000/firefox-box/commit/6ce7c35d198e10db99c396c4a253c766e30206d9))
+
+
+### Fixes
+
+* **firefox-formula, pillar/firefox.sls.example:** Add IP address option for VNC ports binding and using default `127.0.0.1` as the IP for the VNC ports binding ([289e772](https://github.com/extra2000/firefox-box/commit/289e772ce5972867c36504c583e1f733a4cbd77a))
+
 ## 1.0.0 (2021-01-13)
 
 
