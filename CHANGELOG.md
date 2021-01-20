@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/extra2000/firefox-box/compare/v1.0.1...v1.1.0) (2021-01-20)
+
+
+### Features
+
+* **submodule:** Update `cockpit-formula` to [v1.0.2](https://github.com/extra2000/cockpit-formula/releases/tag/v1.0.2) ([f059975](https://github.com/extra2000/firefox-box/commit/f059975da63d82d901f3c705bead2a7c55d03c06))
+* **submodule:** Update `podman-formula` to [v2.2.1](https://github.com/extra2000/podman-formula/releases/tag/v2.2.1) ([ca099c9](https://github.com/extra2000/firefox-box/commit/ca099c953a70fbe4586aded0efb66ab7ab549b57))
+
+
+### Continuous Integrations
+
+* **AppVeyor:** Upgrade Ubuntu from `18.04` to `20.04` ([e23358b](https://github.com/extra2000/firefox-box/commit/e23358b6b19cb4642b0277ee317482d6ed7c90b0))
+
 ### [1.0.1](https://github.com/extra2000/firefox-box/compare/v1.0.0...v1.0.1) (2021-01-13)
 
 
