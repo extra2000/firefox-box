@@ -17,9 +17,10 @@ $ cd firefox-box
 
 ## Creating Vagrant Box
 
-Create Salt pillar file for Firefox, based on the given example file. You can change the value in this pillar file:
+Create Salt pillar file for Firefox and Zabbix agent, based on the given example file. You can change the value in this pillar file:
 ```
 $ cp -v salt/roots/pillar/firefox.sls.example salt/roots/pillar/firefox.sls
+$ cp -v salt/roots/pillar/zabbix-agent.sls.example salt/roots/pillar/zabbix-agent.sls
 ```
 
 Copy vagrant file from `vagrant/examples/` and then create the vagrant box (you can change to `--provider=libvirt` if you want to use Libvirt provider):
@@ -28,7 +29,7 @@ $ cp -v vagrant/examples/Vagrantfile.firefox-box.fedora-33.x86_64.example vagran
 $ vagrant up --provider=virtualbox
 ```
 
-Provision the vagrant box which disable swap memory and install Podman:
+Provision the vagrant box which disable swap memory, install Podman, and deploy Zabbix agent:
 ```
 $ vagrant ssh firefox-box -- sudo salt-call state.highstate
 ```
