@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.2.0](https://github.com/extra2000/firefox-box/compare/v1.1.0...v1.2.0) (2021-03-08)
+
+
+### Features
+
+* **submodule:** Add [zabbix-agent-formula v2.0.0](https://github.com/extra2000/zabbix-agent-formula/releases/tag/v2.0.0) ([4cb2665](https://github.com/extra2000/firefox-box/commit/4cb26656bfa214a4252c9d051641f561b73d39b7))
+* **submodule:** Update `firefox-formula` to [v1.1.0](https://github.com/extra2000/firefox-formula/releases/tag/v1.1.0) ([fb40e0e](https://github.com/extra2000/firefox-box/commit/fb40e0ea71cf6c10f10f28d6f7316e8db0295c7e))
+
+
+### Continuous Integrations
+
+* **AppVeyor:** Add instruction to create Zabbix agent pillar file ([31f8b30](https://github.com/extra2000/firefox-box/commit/31f8b3047b7417a89d5681c3c1c0d011b89ca6bf))
+* **AppVeyor:** Ensure `git submodule` is recursive ([f2a4438](https://github.com/extra2000/firefox-box/commit/f2a4438980f121fb52d7dc6cabb1f48921bcd38d))
+
+
+### Code Refactoring
+
+* **submodule:** Remove `cockpit-formula` in favor of `zabbix-agent-formula` ([f5eed22](https://github.com/extra2000/firefox-box/commit/f5eed22df63f51f81e0bc77375146cb13c000d75))
+
+
+### Documentations
+
+* **README:** Update instructions and descriptions for Zabbix agent ([9b5c724](https://github.com/extra2000/firefox-box/commit/9b5c724e6d0e79598d823b363b97dfc3440547d5))
+
 ## [1.1.0](https://github.com/extra2000/firefox-box/compare/v1.0.1...v1.1.0) (2021-01-20)
 
 
