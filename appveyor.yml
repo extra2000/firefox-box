@@ -9,6 +9,7 @@ install:
   - git submodule update --init --recursive
 build_script:
   - cp -v salt/roots/pillar/firefox.sls.example salt/roots/pillar/firefox.sls
+  - cp -v salt/roots/pillar/zabbix-agent.sls.example salt/roots/pillar/zabbix-agent.sls
   - cp -v vagrant/examples/Vagrantfile.firefox-box.fedora-33.x86_64.example vagrant/Vagrantfile.firefox-box
   - sudo vagrant up --provider=libvirt firefox-box
   - sudo vagrant ssh firefox-box -- sudo salt-call state.highstate
